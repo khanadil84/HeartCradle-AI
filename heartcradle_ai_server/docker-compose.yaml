@@ -1,0 +1,30 @@
+services:
+  # Development services
+  postgres:
+    image: ghcr.io/serverpod/postgres:16
+    ports:
+      - "8090:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_DB: heartcradle_ai
+      POSTGRES_PASSWORD: "OIwCb2IEKSzGtYMIuUG87SrwTd9K6ogm"
+    volumes:
+      - heartcradle_ai_data:/var/lib/postgresql/data
+
+
+  # Test services
+  postgres_test:
+    image: ghcr.io/serverpod/postgres:16
+    ports:
+      - "9090:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_DB: heartcradle_ai_test
+      POSTGRES_PASSWORD: "kVcHtnFaYwS8aW9LklVXjboeVU1ZLmCE"
+    volumes:
+      - heartcradle_ai_test_data:/var/lib/postgresql/data
+
+
+volumes:
+  heartcradle_ai_data:
+  heartcradle_ai_test_data:

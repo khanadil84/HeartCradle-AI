@@ -1,0 +1,26 @@
+audit:
+  - recordEvent:
+  - watchMission:
+emailIdp:
+  - login:
+  - startRegistration:
+  - verifyRegistrationCode:
+  - finishRegistration:
+  - startPasswordReset:
+  - verifyPasswordResetCode:
+  - finishPasswordReset:
+  - hasAccount:
+jwtRefresh:
+  - refreshAccessToken:
+greeting:
+  - hello:
+mission:
+  - startMission:
+  - updateMission:
+  - getRecentMissions:
+  - getMission:
+  - getMissionHistory:
+sync:
+  - syncLocalEvent:
+triage:
+  - analyzeTelemetry:

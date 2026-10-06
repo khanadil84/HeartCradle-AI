@@ -1,0 +1,13 @@
+class: Mission
+table: mission
+
+fields:
+  missionId: String?, unique
+  patientId: String
+  status: String
+  completedSteps: int
+  totalSteps: int
+  currentStep: String
+  startedAt: DateTime
+  completedAt: DateTime?
+  lastEvent: String

@@ -1,0 +1,10 @@
+class: AuditEvent
+table: audit_event
+
+fields:
+  eventId: String?, unique
+  missionId: String
+  event: String
+  fromState: String
+  toState: String
+  createdAt: DateTime

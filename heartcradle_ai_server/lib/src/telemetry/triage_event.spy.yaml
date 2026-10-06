@@ -1,0 +1,14 @@
+class: TriageEvent
+table: triage_event
+
+fields:
+  eventId: String?, unique
+  patientId: String
+  heartRate: int
+  spo2: int
+  respiratoryRate: int
+  temperature: double
+  signalQuality: String
+  decision: String
+  reason: String
+  createdAt: DateTime
