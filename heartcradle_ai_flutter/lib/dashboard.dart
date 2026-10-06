@@ -606,7 +606,7 @@ class _HeartCradleScreenState extends State<HeartCradleScreen> {
                             ),
                           ),
                           Text(
-                            '${missionTotalSteps == 0 ? 0 : (($missionCompletedSteps / $missionTotalSteps) * 100).round()}%',
+                            '${missionTotalSteps == 0 ? 0 : ((missionCompletedSteps / missionTotalSteps) * 100).round()}%',
                             style: const TextStyle(
                               fontSize: 12,
                               fontWeight: FontWeight.bold,
@@ -1397,6 +1397,7 @@ class _HeartCradleScreenState extends State<HeartCradleScreen> {
     );
   }
 }
+
 
 
 
